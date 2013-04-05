@@ -3,21 +3,21 @@ var async = require('async');
 var fs    = require('fs');
 
 var pathopts = {
-    client  : 'chromium',
-    pfilter : 0,
-    xjerr   : 1,
-    lang    : 'en-US'
-  };
+       client  : 'chromium',
+       pfilter : 0,
+       xjerr   : 1,
+       lang    : 'en-US'
+    };
 var path = '/speech-api/v1/recognize?';
 var httpRequestOptions = {
-    host  : 'www.google.com',
-    port  : 80,
-    headers : {
-      'user-agent' : 'Mozilla/5.0',
-      'Content-Type' : 'audio/x-flac; rate=16000'
-    },
-    method: 'POST'
-  };
+       host  : 'www.google.com',
+       port  : 80,
+       headers : {
+         'user-agent' : 'Mozilla/5.0',
+         'Content-Type' : 'audio/x-flac; rate=16000'
+       },
+       method: 'POST'
+    };
 
 var serialize = function(obj) {
   "use strict";
