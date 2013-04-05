@@ -1,0 +1,22 @@
+{
+  "name":"googleS2T",
+  "version":"0.0.1",
+  "description":"nodejs wrapper for the google Speech to Text service",
+  "main":"index",
+  "keywords":[
+    "google",
+    "speech",
+    "s2t",
+    "recognition"
+  ],
+  "dependencies": {
+    "async": "~0.2.6"
+  },
+  "readmefilename":"README.md",
+  "licenses" : [
+    { 
+      "type" : "MIT",
+      "url" : "https://raw.github.com/myster0n/node-googleS2T/master/README.md"
+    }
+  ]
+}
