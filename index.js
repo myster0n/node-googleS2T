@@ -1,3 +1,5 @@
+"use strict";
+
 var http  = require('http');
 var async = require('async');
 var fs    = require('fs');
@@ -20,7 +22,6 @@ var httpRequestOptions = {
     };
 
 var serialize = function(obj) {
-  "use strict";
   var str = [];
   for (var p in obj) {
     if (obj.hasOwnProperty(p)) {
@@ -31,7 +32,6 @@ var serialize = function(obj) {
 };
 
 var callGoogle = function(path, cb) {
-  "use strict";
   var response = "";
   fs.readFile(path, function(err, data) {
     if (err) {
@@ -63,7 +63,6 @@ var callGoogle = function(path, cb) {
 };
 
 exports.s2t = function(path_to_flac, filterEmpty, opts, callback) {
-  "use strict";
   callback = (callback || function() {});
   for (var attrname in opts) {
     if (opts.hasOwnProperty(attrname)) {
