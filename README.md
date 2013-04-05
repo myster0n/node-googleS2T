@@ -21,7 +21,8 @@ The callback function.
 
 ## Example
 
-```javascript var s2t = require('googleS2T').s2t;
+```javascript 
+var s2t = require('googleS2T').s2t;
 s2t([ '/data/audio/fragment1.flac',
       '/data/audio/fragment2.flac',
       '/data/audio/fragment3.flac'],
@@ -35,7 +36,8 @@ s2t([ '/data/audio/fragment1.flac',
 
 Which results in :
 
-```[
+```json
+[
   {
     "status": 0,
     "id": "980dd1ef2d82b1d5ffa6c7e32db6791d-1",
@@ -61,7 +63,8 @@ Which results in :
 
 As you can see, I only have 2 results for 3 audio samples. If you want the full results, just set *filterEmpty* to **false**, which results in this :
 
-```[
+```json
+[
   {
     "status": 5,
     "id": "3d2779fe554b647bb52be50c13d10f63-1",
